@@ -159,15 +159,18 @@ Theming with a theme &lt;strong&gt;Rin, Shelter&lt;/strong&gt; in mind.&lt;/p&gt
     </item>
     
     <item>
-      <title>About Hugo</title>
+      <title>About me</title>
       <link>https://csaratakij.github.io/MyPortFolio/about/</link>
       <pubDate>Sat, 11 Apr 2020 19:15:32 +0800</pubDate>
       
       <guid>https://csaratakij.github.io/MyPortFolio/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.</description>
+      <description>Hello, I&amp;rsquo;m Chatchai Saratakij.
+Indie Game Developer, Self-taught Programmer, Linux lover and Passionate about Game Development.
+I love technology, try to catch-up with anything in this field.
+But give the game development as a primary focus.
+My hobby is watching anime, contribute to opensource project, participate in game jam and playing game. (Especially osu!)
+You can find my work here :
+ Itch.io : https://csaratakij.itch.io Global Game Jam : https://globalgamejam.org/users/chatchai-saratakij GitHub : https://github.com/CSaratakij  </description>
     </item>
     
   </channel>
