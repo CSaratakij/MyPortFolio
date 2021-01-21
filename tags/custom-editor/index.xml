@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Custom Editor on CSaratakij | PortFolio</title>
+    <link>https://csaratakij.github.io/MyPortFolio/tags/custom-editor/</link>
+    <description>Recent content in Custom Editor on CSaratakij | PortFolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Sep 2020 09:15:47 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyPortFolio/tags/custom-editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doppelganger</title>
+      <link>https://csaratakij.github.io/MyPortFolio/post/doppelganger/</link>
+      <pubDate>Wed, 02 Sep 2020 09:11:33 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyPortFolio/post/doppelganger/</guid>
+      <description>&lt;p&gt;The puzzle platformer with a twist. Player can use a “Focus” power, the ability to bend a dimension to overcome the obstacle.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/dg-cover.png&#34; alt=&#34;Doppelganger&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Board Game Path Finding</title>
+      <link>https://csaratakij.github.io/MyPortFolio/post/board-game-path-finding/</link>
+      <pubDate>Wed, 02 Sep 2020 09:15:47 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyPortFolio/post/board-game-path-finding/</guid>
+      <description>&lt;p&gt;The little project that demonstrate how to implement a path finding in the board game.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/bgp-intro.png&#34; alt=&#34;sample&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HierachySection</title>
+      <link>https://csaratakij.github.io/MyPortFolio/post/hierachysection/</link>
+      <pubDate>Wed, 02 Sep 2020 09:14:55 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyPortFolio/post/hierachysection/</guid>
+      <description>&lt;p&gt;The custom editor for Unity to highlight a game object that has a prefix &lt;strong&gt;&#39;&amp;mdash;&#39;&lt;/strong&gt; in its name to help seperate stuff in the Hierachy panel.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/hs-intro.png&#34; alt=&#34;custom editor&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

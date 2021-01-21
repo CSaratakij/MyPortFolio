@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.79.0" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+
+
+<title>Search - CSaratakij | PortFolio</title>
+
+
+<meta name="author" content="CSaratakij" />
+
+
+
+<meta property="og:title" content="Search" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://csaratakij.github.io/MyPortFolio/search/" />
+<meta property="og:image" content="https://csaratakij.github.io/MyPortFolio/img/og.png"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://csaratakij.github.io/MyPortFolio/img/og.png"/>
+
+<meta name="twitter:title" content="Search"/>
+<meta name="twitter:description" content=""/>
+
+
+
+
+
+<link rel="stylesheet" href="https://csaratakij.github.io/MyPortFolio/assets/css/fuji.min.css" />
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://csaratakij.github.io/MyPortFolio">CSaratakij | PortFolio</a>
+            
+            <span class="title-sub">Things I made :D</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+
+<div class="page-info">
+    <form class="search-form" method="GET">
+        <div class="search-input">
+            <input name="s" type="search" autocapitalize="off" autocomplete="off" autocorrect="off"
+                   spellcheck="false" />
+            <button type="submit"><i class="iconfont icon-search-circle-sharp"></i></button>
+        </div>
+    </form>
+</div>
+
+<div class="search-result-info" style="display: none;"><span>[NUM] results ([TIME] ms)</span></div>
+<div class="search-result-info" style="display: none;"><span>Results not found</span></div>
+<div class="search-result-info" style="display: none;"><span>Failed to load index file</span></div>
+<div id="search-result"></div>
+<script id="search-result-template" type="text/fuse-template">
+    <% for(var i = 0; i < $data.length; i++){ %>
+    <div class="post">
+        <h3 class="post-item post-title-archive">
+            <a href="<%= $data[i].item.permalink %>"><%= $data[i].item.title %></a>
+        </h3>
+        <div class="post-item post-meta-archive">
+            <span><i class="iconfont icon-today-sharp"></i>&nbsp;<%= $data[i].item.date %></span>
+            <span>
+                <i class="iconfont icon-pricetags-sharp"></i>&nbsp;<% if ($data[i].item.tags && $data[i].item.tags.length > 0) { %><% for(var j = 0; j < $data[i].item.tags.length; j++){ %><%= $data[i].item.tags[j] %>&nbsp;<% } %><% } else { %>No tag<% } %>
+            </span>
+        </div>
+    </div>
+    <% } %>
+</script>
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/MyPortFolio/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/MyPortFolio/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/MyPortFolio/tags/c&#43;&#43;/">C&#43;&#43;</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/custom-editor/">Custom Editor</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/gamejam/">GameJam</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/global-game-jam/">Global Game Jam</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/ludumdare/">Ludumdare</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/nsc2018/">NSC2018</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/osu/">OSU</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/rice/">rice</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/sfml/">SFML</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/shell-script/">Shell Script</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/tiling-window-manager/">Tiling Window Manager</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/unity/">Unity</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/win32api/">Win32api</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Contacts</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/CSaratakij" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/CSaratakij" target="_blank"><span>Facebook</span></a>
+            </li>
+            
+            <li>
+                <a href="mailto:CSaratakij@gmail.com" target="_blank"><span>E-Mail</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2021 <a href="https://csaratakij.github.io/MyPortFolio">CSaratakij</a> |
+                Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> </span>
+        </div>
+    </div>
+</footer>
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/art-template@4.13.2/lib/template-web.min.js,npm/fuse.js@6.4.1"></script>
+
+
+
+<script defer src="/MyPortFolio/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>

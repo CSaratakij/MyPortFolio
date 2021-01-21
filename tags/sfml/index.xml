@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SFML on CSaratakij | PortFolio</title>
+    <link>https://csaratakij.github.io/MyPortFolio/tags/sfml/</link>
+    <description>Recent content in SFML on CSaratakij | PortFolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Sep 2020 09:15:21 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyPortFolio/tags/sfml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bongocat Osu (Linux Native Port)</title>
+      <link>https://csaratakij.github.io/MyPortFolio/post/bongocat-osu-linux-native-port/</link>
+      <pubDate>Wed, 02 Sep 2020 09:15:21 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyPortFolio/post/bongocat-osu-linux-native-port/</guid>
+      <description>&lt;p&gt;The bongo cat that show how user smash their keyboard and how their mouse or pen tablet might look like in the real world.
+Very useful when streaming osu! game.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/bongo-intro.png&#34; alt=&#34;app&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

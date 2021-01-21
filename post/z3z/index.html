@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.79.0" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+
+
+<title>Z3z - CSaratakij | PortFolio</title>
+
+
+<meta name="author" content="CSaratakij" />
+
+
+
+<meta name="keywords" content="Unity" />
+
+<meta property="og:title" content="Z3z" />
+<meta property="og:description" content="The first person shooting that heavy inspired by Lovely Planet.
+Player must defeat all enemies within the level to proceed to the next level.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://csaratakij.github.io/MyPortFolio/post/z3z/" />
+<meta property="og:image" content="https://csaratakij.github.io/MyPortFolio/img/og.png"/>
+<meta property="article:published_time" content="2020-09-02T09:14:43+07:00" />
+<meta property="article:modified_time" content="2020-09-02T09:14:43+07:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://csaratakij.github.io/MyPortFolio/img/og.png"/>
+
+<meta name="twitter:title" content="Z3z"/>
+<meta name="twitter:description" content="The first person shooting that heavy inspired by Lovely Planet.
+Player must defeat all enemies within the level to proceed to the next level.
+
+"/>
+
+
+
+
+
+<link rel="stylesheet" href="https://csaratakij.github.io/MyPortFolio/assets/css/fuji.min.css" />
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://csaratakij.github.io/MyPortFolio">CSaratakij | PortFolio</a>
+            
+            <span class="title-sub">Things I made :D</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://csaratakij.github.io/MyPortFolio/post/z3z/">Z3z</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-09-02</span><span><i class="iconfont icon-time-sharp"></i>&nbsp;2 minutes</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/MyPortFolio/tags/unity">Unity</a>&nbsp;</span>
+
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>The first person shooting that heavy inspired by <strong>Lovely Planet</strong>.<br>
+Player must defeat all enemies within the level to proceed to the next level.</p>
+<p><img class="img-zoomable" src="/MyPortFolio/img/z3z-intro.png" alt="game" />
+</p>
+<p>game: <a href="https://github.com/CSaratakij/z3z/releases">https://github.com/CSaratakij/z3z/releases</a><br>
+respository: <a href="https://github.com/CSaratakij/z3z">https://github.com/CSaratakij/z3z</a></p>
+<p>responsible: all</p>
+<h2 id="showcase">Showcase</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8EtqjO4foA4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<p>Lovely Planet is amazing, But I want to add more level.<br>
+So, I try to clone it.</p>
+<h2 id="technical-challenge">Technical Challenge</h2>
+<p>The fact that player saw bullets travel from the gun barrel make things a little complicated.</p>
+<h3 id="hit-register">Hit Register</h3>
+<p>Since bullets need to move, I need to make sure the chance of collision tunneling is low.<br>
+I need <strong>Continuous Collision Detection (CCD)</strong>, using it with bullets.</p>
+<p>Unity provides collision detection type <a href="https://docs.unity3d.com/ScriptReference/CollisionDetectionMode.ContinuousSpeculative.html" target="_blank">&ldquo;Continuous Speculative&rdquo;</a>.<br>
+Which is the CCD but cheaper to calculate than the CCD with a sweep based.</p>
+<p>I also need to keep the bullet traveling with resonable low speed, further avoding the chance of tunneling.</p>
+<h3 id="bullet-trajectory">Bullet Trajectory</h3>
+<p>I need to make bullet appears at the gun barrel and travel with the aim direction.<br>
+The aim direction in the player perspective is from the center of the screen.</p>
+<p>The gun itself need to look like it point to the center of the screen as well.<br>
+So, I need to rotate a gun to make it look like that some how.</p>
+<p>Because there is no crosshair in this game, player should be able to aim from the hip by the line of sight that gun model create.</p>
+<p><img class="img-zoomable" src="/MyPortFolio/img/z3z-gun-line-sight.png" alt="gun line of sight" />
+</p>
+<p>Without this line of sight, aiming is stupidly difficult.</p>
+<p>To rotate the gun, I simply find a look direction of camera in world space, offset it forward and then make gun model look at that position (Rotate only Y-axis).</p>
+<p><img class="img-zoomable" src="/MyPortFolio/img/z3z-rotate-explain.png" alt="rotate explain" />
+</p>
+<h2 id="summary">Summary</h2>
+<p>I already tweak the feels of player controlling.<br>
+The core functional works pretty well, need more level and enemy type (later).</p>
+<p>This one is about trying to clone the game mechanic, so I don&rsquo;t have an intention to release this to game site such as <a href="https://itch.io/" target="_blank">itch.io</a> (aside from the source).</p>
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/MyPortFolio/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/MyPortFolio/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/MyPortFolio/tags/c&#43;&#43;/">C&#43;&#43;</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/custom-editor/">Custom Editor</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/gamejam/">GameJam</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/global-game-jam/">Global Game Jam</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/ludumdare/">Ludumdare</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/nsc2018/">NSC2018</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/osu/">OSU</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/rice/">rice</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/sfml/">SFML</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/shell-script/">Shell Script</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/tiling-window-manager/">Tiling Window Manager</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/unity/">Unity</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/win32api/">Win32api</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Contacts</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/CSaratakij" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/CSaratakij" target="_blank"><span>Facebook</span></a>
+            </li>
+            
+            <li>
+                <a href="mailto:CSaratakij@gmail.com" target="_blank"><span>E-Mail</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>TOC</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#showcase">Showcase</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#technical-challenge">Technical Challenge</a>
+      <ul>
+        <li><a href="#hit-register">Hit Register</a></li>
+        <li><a href="#bullet-trajectory">Bullet Trajectory</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2021 <a href="https://csaratakij.github.io/MyPortFolio">CSaratakij</a> |
+                Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> </span>
+        </div>
+    </div>
+</footer>
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/medium-zoom@1.0.6,npm/lazysizes@5.2.2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/MyPortFolio/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>

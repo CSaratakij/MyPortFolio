@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.79.0" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+
+
+<title>MyWinBar - CSaratakij | PortFolio</title>
+
+
+<meta name="author" content="CSaratakij" />
+
+
+
+<meta name="keywords" content="C&#43;&#43;, Win32api, Tiling Window Manager" />
+
+<meta property="og:title" content="MyWinBar" />
+<meta property="og:description" content="The custom taskbar design to use with MyWinTiles to properly show the current workspace.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://csaratakij.github.io/MyPortFolio/post/mywinbar/" />
+<meta property="og:image" content="https://csaratakij.github.io/MyPortFolio/img/og.png"/>
+<meta property="article:published_time" content="2020-09-02T09:15:14+07:00" />
+<meta property="article:modified_time" content="2020-09-02T09:15:14+07:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://csaratakij.github.io/MyPortFolio/img/og.png"/>
+
+<meta name="twitter:title" content="MyWinBar"/>
+<meta name="twitter:description" content="The custom taskbar design to use with MyWinTiles to properly show the current workspace.
+
+"/>
+
+
+
+
+
+<link rel="stylesheet" href="https://csaratakij.github.io/MyPortFolio/assets/css/fuji.min.css" />
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://csaratakij.github.io/MyPortFolio">CSaratakij | PortFolio</a>
+            
+            <span class="title-sub">Things I made :D</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://csaratakij.github.io/MyPortFolio/post/mywinbar/">MyWinBar</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-09-02</span><span><i class="iconfont icon-time-sharp"></i>&nbsp;2 minutes</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/MyPortFolio/tags/c&#43;&#43;">C&#43;&#43;</a>&nbsp;<a href="/MyPortFolio/tags/win32api">Win32api</a>&nbsp;<a href="/MyPortFolio/tags/tiling-window-manager">Tiling Window Manager</a>&nbsp;</span>
+
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>The custom taskbar design to use with <strong>MyWinTiles</strong> to properly show the current workspace.</p>
+<p><img class="img-zoomable" src="/MyPortFolio/img/mywinbar-preview.png" alt="preview" />
+</p>
+<p>release: <a href="https://github.com/CSaratakij/MyWinBar/releases">https://github.com/CSaratakij/MyWinBar/releases</a><br>
+repository: <a href="https://github.com/CSaratakij/MyWinBar">https://github.com/CSaratakij/MyWinBar</a></p>
+<p>responsible: all</p>
+<h2 id="showcase">Showcase</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/oZzpa10FVQ8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<p>MyWinBar is the custom taskbar to be use with MyWinTiles.</p>
+<p>It show information about workspaces, what window is currently on focus, battery status and current time.
+The solely purpose is to make it easy to use MyWinTiles.</p>
+<p>Making an ideals desktop environment consists of these stuff.</p>
+<ol>
+<li>Window manager : MyWinTiles</li>
+<li>Bar : MyWinBar</li>
+<li>App Launcher : <a href="https://github.com/Wox-launcher/Wox" target="_blank">Wox</a></li>
+</ol>
+<h2 id="technical-challenge">Technical Challenge</h2>
+<h3 id="documentation">Documentation</h3>
+<p>Win32 API is huge&hellip;<br>
+You can get lost in information if you don&rsquo;t know what you&rsquo;re looking for.</p>
+<p>Well, I know this is about Windows Shell &amp; Desktop Environment.<br>
+After skimming through the document, I found exactly what I&rsquo;m looking.</p>
+<p>Windows call it &ldquo;application desktop toolbar&rdquo; (or appbar), this <a href="https://docs.microsoft.com/en-us/windows/win32/shell/application-desktop-toolbars" target="_blank">docs</a> has everthing I need to know.</p>
+<p>The thing is, this is not an usual application.<br>
+That&rsquo;s why there is less information about this stuff on any forum.</p>
+<p>I have to tell the <strong>Windows Explorer Shell</strong> to reserve some space on the screen for the custom taskbar.
+To prevent any normal application overlap on this custom taskbar.</p>
+<p>Without the docs above, this is simply not possible.</p>
+<h3 id="communication-with-mywintiles">Communication with MyWinTiles</h3>
+<p>I need <a href="https://docs.microsoft.com/en-us/windows/win32/ipc/interprocess-communications" target="_blank">interprocess communication (IPC)</a> to make MyWinTiles and MyWinBar talk to each other.<br>
+Socket is way overkill for this task, So I use <a href="https://docs.microsoft.com/en-us/windows/win32/dataxchg/data-copy" target="_blank">Data Copy</a>.</p>
+<p>I encode the information about workspace status as a bit to send the data in one go, avoid any race condition to occur.</p>
+<p><img class="img-zoomable" src="/MyPortFolio/img/mywinbar-bitflag.png" alt="bit-encode" />
+</p>
+<p>All I need is 2 bytes, first 6 bits is for the current workspace. 10 bits after that is a bool flag status of whether or not workspace currently have atleast 1 window.</p>
+<p>To get the information, simply use bitwise.<br>
+Shift bit to the right by 10 to get the current workspace. Use AND operation to get the bool flag.</p>
+<h2 id="summary">Summary</h2>
+<p>With win32 api magic and simple bitwise, I can make a custom taskbar.<br>
+This thing is useless on its own, It need MyWinTiles to function.</p>
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/MyPortFolio/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/MyPortFolio/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/MyPortFolio/tags/c&#43;&#43;/">C&#43;&#43;</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/custom-editor/">Custom Editor</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/gamejam/">GameJam</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/global-game-jam/">Global Game Jam</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/ludumdare/">Ludumdare</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/nsc2018/">NSC2018</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/osu/">OSU</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/rice/">rice</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/sfml/">SFML</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/shell-script/">Shell Script</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/tiling-window-manager/">Tiling Window Manager</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/unity/">Unity</a>
+            </span>
+            
+            <span>
+                <a href="/MyPortFolio/tags/win32api/">Win32api</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Contacts</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/CSaratakij" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/CSaratakij" target="_blank"><span>Facebook</span></a>
+            </li>
+            
+            <li>
+                <a href="mailto:CSaratakij@gmail.com" target="_blank"><span>E-Mail</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>TOC</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#showcase">Showcase</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#technical-challenge">Technical Challenge</a>
+      <ul>
+        <li><a href="#documentation">Documentation</a></li>
+        <li><a href="#communication-with-mywintiles">Communication with MyWinTiles</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2021 <a href="https://csaratakij.github.io/MyPortFolio">CSaratakij</a> |
+                Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> </span>
+        </div>
+    </div>
+</footer>
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/medium-zoom@1.0.6,npm/lazysizes@5.2.2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/MyPortFolio/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>
