@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on CSaratakij | PortFolio</title>
-    <link>https://csaratakij.github.io/MyStuff/tags/python/</link>
+    <link>https://csaratakij.github.io/MyPortFolio/tags/python/</link>
     <description>Recent content in Python on CSaratakij | PortFolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Sep 2020 09:15:34 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyStuff/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Sep 2020 09:15:34 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyPortFolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Osube</title>
-      <link>https://csaratakij.github.io/MyStuff/post/osube/</link>
+      <link>https://csaratakij.github.io/MyPortFolio/post/osube/</link>
       <pubDate>Wed, 02 Sep 2020 09:15:34 +0700</pubDate>
       
-      <guid>https://csaratakij.github.io/MyStuff/post/osube/</guid>
+      <guid>https://csaratakij.github.io/MyPortFolio/post/osube/</guid>
       <description>&lt;p&gt;The little script that help extract multiple osu! beatmaps.&lt;br&gt;
 It come with a file watcher to detect and auto extract any beatmap in the watching directory.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/osube-intro.png&#34; alt=&#34;osube&#34; /&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/osube-intro.png&#34; alt=&#34;osube&#34; /&gt;
 &lt;/p&gt;</description>
     </item>
     

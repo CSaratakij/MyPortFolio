@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on CSaratakij | PortFolio</title>
-    <link>https://csaratakij.github.io/MyStuff/archives/</link>
+    <link>https://csaratakij.github.io/MyPortFolio/archives/</link>
     <description>Recent content in Archives on CSaratakij | PortFolio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://csaratakij.github.io/MyStuff/archives/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://csaratakij.github.io/MyPortFolio/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

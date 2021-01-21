@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell Script on CSaratakij | PortFolio</title>
-    <link>https://csaratakij.github.io/MyStuff/tags/shell-script/</link>
+    <link>https://csaratakij.github.io/MyPortFolio/tags/shell-script/</link>
     <description>Recent content in Shell Script on CSaratakij | PortFolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Sep 2020 09:15:34 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyStuff/tags/shell-script/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Sep 2020 09:15:34 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyPortFolio/tags/shell-script/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Osube</title>
-      <link>https://csaratakij.github.io/MyStuff/post/osube/</link>
+      <link>https://csaratakij.github.io/MyPortFolio/post/osube/</link>
       <pubDate>Wed, 02 Sep 2020 09:15:34 +0700</pubDate>
       
-      <guid>https://csaratakij.github.io/MyStuff/post/osube/</guid>
+      <guid>https://csaratakij.github.io/MyPortFolio/post/osube/</guid>
       <description>&lt;p&gt;The little script that help extract multiple osu! beatmaps.&lt;br&gt;
 It come with a file watcher to detect and auto extract any beatmap in the watching directory.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/osube-intro.png&#34; alt=&#34;osube&#34; /&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/osube-intro.png&#34; alt=&#34;osube&#34; /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>I3 Rice Rin Shelter</title>
-      <link>https://csaratakij.github.io/MyStuff/post/i3-rice-rin-shelter/</link>
+      <link>https://csaratakij.github.io/MyPortFolio/post/i3-rice-rin-shelter/</link>
       <pubDate>Wed, 02 Sep 2020 09:15:29 +0700</pubDate>
       
-      <guid>https://csaratakij.github.io/MyStuff/post/i3-rice-rin-shelter/</guid>
+      <guid>https://csaratakij.github.io/MyPortFolio/post/i3-rice-rin-shelter/</guid>
       <description>&lt;p&gt;My most popular i3 wm rice.&lt;br&gt;
 Theming with a theme &lt;strong&gt;Rin, Shelter&lt;/strong&gt; in mind.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/i3rice-intro.png&#34; alt=&#34;rice&#34; /&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/i3rice-intro.png&#34; alt=&#34;rice&#34; /&gt;
 &lt;/p&gt;</description>
     </item>
     

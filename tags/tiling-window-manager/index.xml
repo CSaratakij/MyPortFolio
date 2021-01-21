@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tiling Window Manager on CSaratakij | PortFolio</title>
-    <link>https://csaratakij.github.io/MyStuff/tags/tiling-window-manager/</link>
+    <link>https://csaratakij.github.io/MyPortFolio/tags/tiling-window-manager/</link>
     <description>Recent content in Tiling Window Manager on CSaratakij | PortFolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Sep 2020 09:15:14 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyStuff/tags/tiling-window-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Sep 2020 09:15:14 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyPortFolio/tags/tiling-window-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MyWinTiles</title>
-      <link>https://csaratakij.github.io/MyStuff/post/mywintiles/</link>
+      <link>https://csaratakij.github.io/MyPortFolio/post/mywintiles/</link>
       <pubDate>Wed, 02 Sep 2020 09:15:04 +0700</pubDate>
       
-      <guid>https://csaratakij.github.io/MyStuff/post/mywintiles/</guid>
+      <guid>https://csaratakij.github.io/MyPortFolio/post/mywintiles/</guid>
       <description>&lt;p&gt;The tiling window manager for Windows, built on top of Windows Explorer Shell.&lt;br&gt;
 Aim to improve productivity of any user that heavily use keyboard on their daily basis.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/mywintiles-intro.png&#34; alt=&#34;app&#34; /&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/mywintiles-intro.png&#34; alt=&#34;app&#34; /&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MyWinBar</title>
-      <link>https://csaratakij.github.io/MyStuff/post/mywinbar/</link>
+      <link>https://csaratakij.github.io/MyPortFolio/post/mywinbar/</link>
       <pubDate>Wed, 02 Sep 2020 09:15:14 +0700</pubDate>
       
-      <guid>https://csaratakij.github.io/MyStuff/post/mywinbar/</guid>
+      <guid>https://csaratakij.github.io/MyPortFolio/post/mywinbar/</guid>
       <description>&lt;p&gt;The custom taskbar design to use with &lt;strong&gt;MyWinTiles&lt;/strong&gt; to properly show the current workspace.&lt;/p&gt;
-&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/mywinbar-preview.png&#34; alt=&#34;preview&#34; /&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyPortFolio/MyPortFolio/img/mywinbar-preview.png&#34; alt=&#34;preview&#34; /&gt;
 &lt;/p&gt;</description>
     </item>
     
