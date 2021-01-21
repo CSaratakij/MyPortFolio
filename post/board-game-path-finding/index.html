@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.79.0" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+
+
+<title>Board Game Path Finding - CSaratakij | PortFolio</title>
+
+
+<meta name="author" content="CSaratakij" />
+
+
+
+<meta name="keywords" content="Unity, Custom Editor" />
+
+<meta property="og:title" content="Board Game Path Finding" />
+<meta property="og:description" content="The little project that demonstrate how to implement a path finding in the board game.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://csaratakij.github.io/MyStuff/post/board-game-path-finding/" />
+<meta property="og:image" content="https://csaratakij.github.io/MyStuff/img/og.png"/>
+<meta property="article:published_time" content="2020-09-02T09:15:47+07:00" />
+<meta property="article:modified_time" content="2020-09-02T09:15:47+07:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://csaratakij.github.io/MyStuff/img/og.png"/>
+
+<meta name="twitter:title" content="Board Game Path Finding"/>
+<meta name="twitter:description" content="The little project that demonstrate how to implement a path finding in the board game.
+
+"/>
+
+
+
+
+
+<link rel="stylesheet" href="https://csaratakij.github.io/MyStuff/assets/css/fuji.min.css" />
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://csaratakij.github.io/MyStuff">CSaratakij | PortFolio</a>
+            
+            <span class="title-sub">Things I made :D</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://csaratakij.github.io/MyStuff/post/board-game-path-finding/">Board Game Path Finding</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-09-02</span><span><i class="iconfont icon-time-sharp"></i>&nbsp;3 minutes</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/MyStuff/tags/unity">Unity</a>&nbsp;<a href="/MyStuff/tags/custom-editor">Custom Editor</a>&nbsp;</span>
+
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>The little project that demonstrate how to implement a path finding in the board game.</p>
+<p><img class="img-zoomable" src="/MyStuff/img/bgp-intro.png" alt="sample" />
+</p>
+<p>respository: <a href="https://github.com/CSaratakij/BoardGamePathFinding">https://github.com/CSaratakij/BoardGamePathFinding</a><br>
+responsible: all</p>
+<h2 id="showcase">Showcase</h2>
+<h3 id="demo">Demo</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/5aaWu5wvtR8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="custom-editor">Custom Editor</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/9aoIig78Jpw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="introduction">Introduction</h2>
+<p>My friend love Dokapon, he want to create his own spin for this game.<br>
+So, he ask me about the topic he need to research to make it possible.</p>
+<p><img class="img-zoomable" src="/MyStuff/img/dokapon-list-stuff.jpg" alt="topic" />
+</p>
+<p>After I give him a list he need to study, the graph theory is the one I give him.</p>
+<p>Sometime pass, he got stuck on how Dokapon path finding works.<br>
+(Which need graph theory to better understand the issue. And yes, he do the homework)</p>
+<p>After pair programming done, I decide to implement my own just for fun.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>When playing Dokapon, player can see which destination they will reach after roll a dice.<br>
+That&rsquo;s why the game need to know which path reach to the show destination.</p>
+<p>Dokapon board is an undirected graph that have the same weight in every edges.<br>
+The problem here is not to find the shortest path.</p>
+<p>The problem is actually, given N step to travel between node, which paths are availables?<br>
+Since the graph has a loop in it, I need to turn it to tree first.</p>
+<p>This is what I need to do to find the path.</p>
+<ol>
+<li>From some specific node, turn the graph to the tree by traverse to node in N step.</li>
+<li>Collect node to form the path along the way.</li>
+<li>After having a tree, traverse from leaf to root node and reverse its order to have a complete path.</li>
+</ol>
+<h2 id="technical-challenge">Technical Challenge</h2>
+<p>Ofcourse, path finding is challege to implement.</p>
+<p>I never play Dokapon, having friend to explain how player see the game work during playthough make problem easier.</p>
+<p>Manually testing stuff to check if the algorithm is working or not is error prone and tire some.<br>
+A bunch of unit test work great in this scenario.</p>
+<p><img class="img-zoomable" src="/MyStuff/img/boardgame-unit-test.png" alt="unit test" />
+</p>
+<p>To make this problem easier, I draw the graph and the step to solve this issue.<br>
+Let&rsquo;s me demonstrate.</p>
+<h3 id="path-finding-implementation">Path Finding Implementation</h3>
+<p>Let&rsquo;s assume the graph look like this.<br>
+The edges store by using adjacency list.</p>
+<p><img class="img-zoomable" src="/MyStuff/img/graph.png" alt="graph" />
+</p>
+<p>Assume, player current node is at the &lsquo;A&rsquo; node.<br>
+That&rsquo;s make &lsquo;A&rsquo; node the root of tree.</p>
+<p>Let&rsquo;s say, player roll result is 2.<br>
+Then, it need to traverse 2 step from the &lsquo;A&rsquo;' node.</p>
+<p>Using depth first search (DFS) to turn the graph to the tree.</p>
+<p>The result look like this.<br>
+Tree depth represent the step of node traversal.</p>
+<p><img class="img-zoomable" src="/MyStuff/img/graph-to-tree.png" alt="graph to tree" />
+</p>
+<p>After that, to get the path, we just need to traverse from the leaf node to the root.<br>
+Then reverse its order.</p>
+<p><img class="img-zoomable" src="/MyStuff/img/boardgame-path-result.png" alt="path result" />
+</p>
+<p>The result store by dictionary (key pair), where key is the destination and value is the path.<br>
+(Path can be more than one per destination)</p>
+<p>Sometime, depends on the start node.<br>
+The path length will be less than the N step, That&rsquo;s why some path from the tree need to remove.</p>
+<p>The reason is simple.</p>
+<p>If you roll the dice to get N step, you expect to move by N.<br>
+(Not moving less than that)</p>
+<h2 id="summary">Summary</h2>
+<p>Yeah, this is a little fun side project.<br>
+With a proper data structure, solving this become possible.</p>
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/MyStuff/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/MyStuff/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/MyStuff/tags/c&#43;&#43;/">C&#43;&#43;</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/custom-editor/">Custom Editor</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/gamejam/">GameJam</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/global-game-jam/">Global Game Jam</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/ludumdare/">Ludumdare</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/nsc2018/">NSC2018</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/osu/">OSU</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/rice/">rice</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/sfml/">SFML</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/shell-script/">Shell Script</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/tiling-window-manager/">Tiling Window Manager</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/unity/">Unity</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/win32api/">Win32api</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Contacts</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/CSaratakij" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/CSaratakij" target="_blank"><span>Facebook</span></a>
+            </li>
+            
+            <li>
+                <a href="mailto:CSaratakij@gmail.com" target="_blank"><span>E-Mail</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>TOC</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#showcase">Showcase</a>
+      <ul>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#custom-editor">Custom Editor</a></li>
+      </ul>
+    </li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#how-it-works">How it works</a></li>
+    <li><a href="#technical-challenge">Technical Challenge</a>
+      <ul>
+        <li><a href="#path-finding-implementation">Path Finding Implementation</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2021 <a href="https://csaratakij.github.io/MyStuff">CSaratakij</a> |
+                Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> </span>
+        </div>
+    </div>
+</footer>
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/medium-zoom@1.0.6,npm/lazysizes@5.2.2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/MyStuff/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>

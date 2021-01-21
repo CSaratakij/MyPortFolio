@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.79.0" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/cdn-stcapi@1/favicons/favicon.ico" />
+
+
+<title>Bongocat Osu (Linux Native Port) - CSaratakij | PortFolio</title>
+
+
+<meta name="author" content="CSaratakij" />
+
+
+
+<meta name="keywords" content="C&#43;&#43;, SFML, Linux, OSU" />
+
+<meta property="og:title" content="Bongocat Osu (Linux Native Port)" />
+<meta property="og:description" content="The bongo cat that show how user smash their keyboard and how their mouse or pen tablet might look like in the real world.
+Very useful when streaming osu! game.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://csaratakij.github.io/MyStuff/post/bongocat-osu-linux-native-port/" />
+<meta property="og:image" content="https://csaratakij.github.io/MyStuff/img/og.png"/>
+<meta property="article:published_time" content="2020-09-02T09:15:21+07:00" />
+<meta property="article:modified_time" content="2020-09-02T09:15:21+07:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://csaratakij.github.io/MyStuff/img/og.png"/>
+
+<meta name="twitter:title" content="Bongocat Osu (Linux Native Port)"/>
+<meta name="twitter:description" content="The bongo cat that show how user smash their keyboard and how their mouse or pen tablet might look like in the real world.
+Very useful when streaming osu! game.
+
+"/>
+
+
+
+
+
+<link rel="stylesheet" href="https://csaratakij.github.io/MyStuff/assets/css/fuji.min.css" />
+
+
+
+
+
+</head>
+
+<body data-theme="auto">
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://csaratakij.github.io/MyStuff">CSaratakij | PortFolio</a>
+            
+            <span class="title-sub">Things I made :D</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://csaratakij.github.io/MyStuff/post/bongocat-osu-linux-native-port/">Bongocat Osu (Linux Native Port)</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-09-02</span><span><i class="iconfont icon-time-sharp"></i>&nbsp;3 minutes</span><span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/MyStuff/tags/c&#43;&#43;">C&#43;&#43;</a>&nbsp;<a href="/MyStuff/tags/sfml">SFML</a>&nbsp;<a href="/MyStuff/tags/linux">Linux</a>&nbsp;<a href="/MyStuff/tags/osu">OSU</a>&nbsp;</span>
+
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>The bongo cat that show how user smash their keyboard and how their mouse or pen tablet might look like in the real world.
+Very useful when streaming osu! game.</p>
+<p><img class="img-zoomable" src="/MyStuff/img/bongo-intro.png" alt="app" />
+</p>
+<p>This is the fork implements the linux specific quirk to make it function like its <a href="https://github.com/kuroni/bongocat-osu" target="_blank">upstream</a>.</p>
+<p>repository: <a href="https://github.com/CSaratakij/bongocat-osu/tree/feature-linux-native-port">https://github.com/CSaratakij/bongocat-osu/tree/feature-linux-native-port</a><br>
+responsible: linux port</p>
+<h2 id="showcase">Showcase</h2>
+<h3 id="run-natively-on-linux">Run natively on linux</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/OylY3CnOpKs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-with-obs">Use with OBS</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3wbGySAu-Hw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="the-need-to-port-this">The need to port this</h2>
+<p>I already used this program on Windows. But I want to run this program natively on linux.<br>
+Normally, this program already run well with <a href="https://www.winehq.org/" target="_blank">wine</a>.</p>
+<p>Unfortunately, In order to work with osu!, I have to run this program with the same <a href="https://wiki.winehq.org/FAQ#Can_I_store_the_virtual_Windows_installation_somewhere_other_than_.7E.2F.wine.3F" target="_blank">WINEPREFIX</a> as the osu!.</p>
+<p>I don&rsquo;t want to bother with that.<br>
+And since this program use <a href="https://www.sfml-dev.org/" target="_blank">SFML</a>, It should be easy for me to port this.</p>
+<p>My my!&hellip;How wrong was I. It took me 3 days to port this.<br>
+Let me show you the struggle.</p>
+<h2 id="technical-challenge">Technical Challenge</h2>
+<h3 id="building-in-general">Building in general</h3>
+<p>The first step to make this possible is to make it build natively in the first place.</p>
+<p>I need to comment the code in the part that is OS specific. Write a new Makefile.<br>
+Also, I need to change from static link SFML to dynamic link which is prefer in linux.</p>
+<h3 id="win32-api-struggle">Win32 api struggle</h3>
+<p>This is why is not easy to port as it should be.<br>
+Upstream use <a href="https://docs.microsoft.com/en-us/windows/win32/api" target="_blank">Win32 API</a> for checking keyboard and mouse cursor position.</p>
+<p>Since this is an OS specific, I need something equipvalent in linux.<br>
+As for the keyboard input, SFML will do just fine.</p>
+<p>But getting the mouse cursor position, I need to talk to <a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank">X11</a>.</p>
+<p>There&rsquo;s a library call <a href="https://github.com/jordansissel/xdotool" target="_blank">libxdo</a>, which make my life easier for getting the information about window related stuff in x11.</p>
+<p>Still, I need to talk to x11 directly for the screen resolution.</p>
+<p>Also, I need to show the message box. The <a href="https://www.gtk.org" target="_blank">GTK</a> and <a href="https://www.qt.io" target="_blank">Qt</a> is way overkill for this.
+I don&rsquo;t know ahead of time if user have a linux distro based on GTK or Qt. (Gnome or KDE for an example)</p>
+<p>The amount of library dependencies that user need to install in order to show message box in those library is too much.</p>
+<p>Instead, I opt for <a href="https://www.libsdl.org" target="_blank">SDL</a>.<br>
+Way less bloat than those gui library.</p>
+<h3 id="x11-quirk">X11 quirk</h3>
+<p>Well, for some reason, x11 handle error strangely.<br>
+If there is an error, x11 will force application to quit itself.</p>
+<p>I have to overwrite this behaviour by writing my own handle error callback.<br>
+Still, why you do this&hellip;x11?</p>
+<h2 id="summary">Summary</h2>
+<p>With some struggle, I manage to port this to linux.<br>
+I still use this program, that&rsquo;s why I currently help upstream resolve issue and implement feature.</p>
+<p>At the time of writing, the last feature I implement and got merge into upstream is a joystick support.<br>
+You can take a look <a href="https://github.com/kuroni/bongocat-osu/pull/115" target="_blank">here</a>.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/KlVhMYmJ4AU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/MyStuff/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/MyStuff/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/MyStuff/tags/c&#43;&#43;/">C&#43;&#43;</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/custom-editor/">Custom Editor</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/gamejam/">GameJam</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/global-game-jam/">Global Game Jam</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/linux/">Linux</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/ludumdare/">Ludumdare</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/nsc2018/">NSC2018</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/osu/">OSU</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/python/">Python</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/rice/">rice</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/sfml/">SFML</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/shell-script/">Shell Script</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/tiling-window-manager/">Tiling Window Manager</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/unity/">Unity</a>
+            </span>
+            
+            <span>
+                <a href="/MyStuff/tags/win32api/">Win32api</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Contacts</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/CSaratakij" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/CSaratakij" target="_blank"><span>Facebook</span></a>
+            </li>
+            
+            <li>
+                <a href="mailto:CSaratakij@gmail.com" target="_blank"><span>E-Mail</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>TOC</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#showcase">Showcase</a>
+      <ul>
+        <li><a href="#run-natively-on-linux">Run natively on linux</a></li>
+        <li><a href="#use-with-obs">Use with OBS</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-need-to-port-this">The need to port this</a></li>
+    <li><a href="#technical-challenge">Technical Challenge</a>
+      <ul>
+        <li><a href="#building-in-general">Building in general</a></li>
+        <li><a href="#win32-api-struggle">Win32 api struggle</a></li>
+        <li><a href="#x11-quirk">X11 quirk</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    
+</aside>
+        </div>
+        <div class="btn">
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            <span>&copy; 2021 <a href="https://csaratakij.github.io/MyStuff">CSaratakij</a> |
+                Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> & <a href="https://gohugo.io/"
+                   target="_blank">Hugo</a> </span>
+        </div>
+    </div>
+</footer>
+    
+<script defer src="https://cdn.jsdelivr.net/combine/npm/medium-zoom@1.0.6,npm/lazysizes@5.2.2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/MyStuff/assets/js/fuji.min.js"></script>
+
+
+</body>
+
+</html>

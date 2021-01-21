@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity on CSaratakij | PortFolio</title>
+    <link>https://csaratakij.github.io/MyStuff/tags/unity/</link>
+    <description>Recent content in Unity on CSaratakij | PortFolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Jan 2021 21:54:38 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyStuff/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doppelganger</title>
+      <link>https://csaratakij.github.io/MyStuff/post/doppelganger/</link>
+      <pubDate>Wed, 02 Sep 2020 09:11:33 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/doppelganger/</guid>
+      <description>&lt;p&gt;The puzzle platformer with a twist. Player can use a “Focus” power, the ability to bend a dimension to overcome the obstacle.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/dg-cover.png&#34; alt=&#34;Doppelganger&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Z3z</title>
+      <link>https://csaratakij.github.io/MyStuff/post/z3z/</link>
+      <pubDate>Wed, 02 Sep 2020 09:14:43 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/z3z/</guid>
+      <description>&lt;p&gt;The first person shooting that heavy inspired by &lt;strong&gt;Lovely Planet&lt;/strong&gt;.&lt;br&gt;
+Player must defeat all enemies within the level to proceed to the next level.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/z3z-intro.png&#34; alt=&#34;game&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Board Game Path Finding</title>
+      <link>https://csaratakij.github.io/MyStuff/post/board-game-path-finding/</link>
+      <pubDate>Wed, 02 Sep 2020 09:15:47 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/board-game-path-finding/</guid>
+      <description>&lt;p&gt;The little project that demonstrate how to implement a path finding in the board game.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/bgp-intro.png&#34; alt=&#34;sample&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Souls</title>
+      <link>https://csaratakij.github.io/MyStuff/post/souls/</link>
+      <pubDate>Thu, 07 Jan 2021 21:54:38 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/souls/</guid>
+      <description>&lt;p&gt;The game that inspired by the souls-like genre.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/souls_preview.png&#34; alt=&#34;preview&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Potto Need Water</title>
+      <link>https://csaratakij.github.io/MyStuff/post/potto-need-water/</link>
+      <pubDate>Wed, 02 Sep 2020 09:14:50 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/potto-need-water/</guid>
+      <description>&lt;p&gt;Transmit water to our lovely &lt;strong&gt;Potto&lt;/strong&gt;.&lt;br&gt;
+Make him growth even more bigger and stronger plant.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/potto-intro.png&#34; alt=&#34;game&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hack and Turn</title>
+      <link>https://csaratakij.github.io/MyStuff/post/hack-and-turn/</link>
+      <pubDate>Wed, 02 Sep 2020 09:14:37 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/hack-and-turn/</guid>
+      <description>&lt;p&gt;The entry for &lt;strong&gt;Ludum Dare 41&lt;/strong&gt;.&lt;br&gt;
+Game that combine 2d hack and slash with a turn base strategy genre.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/hk-intro.png&#34; alt=&#34;game&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pepper Bell Must Be Grilled</title>
+      <link>https://csaratakij.github.io/MyStuff/post/pepper-bell-must-be-grilled/</link>
+      <pubDate>Wed, 02 Sep 2020 09:14:31 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/pepper-bell-must-be-grilled/</guid>
+      <description>&lt;p&gt;The entry for &lt;strong&gt;Ludum Dare 43&lt;/strong&gt; .&lt;br&gt;
+The 4 players party game. Each player must catch and throw each other to the roaster to gain the point within the time imit.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/pb-intro.png&#34; alt=&#34;game&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HierachySection</title>
+      <link>https://csaratakij.github.io/MyStuff/post/hierachysection/</link>
+      <pubDate>Wed, 02 Sep 2020 09:14:55 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/hierachysection/</guid>
+      <description>&lt;p&gt;The custom editor for Unity to highlight a game object that has a prefix &lt;strong&gt;&#39;&amp;mdash;&#39;&lt;/strong&gt; in its name to help seperate stuff in the Hierachy panel.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/hs-intro.png&#34; alt=&#34;custom editor&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,2 +1,0 @@
-# MyStuff
-Portfolio : deploy version

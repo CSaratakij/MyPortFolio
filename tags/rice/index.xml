@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rice on CSaratakij | PortFolio</title>
+    <link>https://csaratakij.github.io/MyStuff/tags/rice/</link>
+    <description>Recent content in rice on CSaratakij | PortFolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Sep 2020 09:15:29 +0700</lastBuildDate><atom:link href="https://csaratakij.github.io/MyStuff/tags/rice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I3 Rice Rin Shelter</title>
+      <link>https://csaratakij.github.io/MyStuff/post/i3-rice-rin-shelter/</link>
+      <pubDate>Wed, 02 Sep 2020 09:15:29 +0700</pubDate>
+      
+      <guid>https://csaratakij.github.io/MyStuff/post/i3-rice-rin-shelter/</guid>
+      <description>&lt;p&gt;My most popular i3 wm rice.&lt;br&gt;
+Theming with a theme &lt;strong&gt;Rin, Shelter&lt;/strong&gt; in mind.&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;img-zoomable&#34; src=&#34;https://csaratakij.github.io/MyStuff/MyStuff/img/i3rice-intro.png&#34; alt=&#34;rice&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
